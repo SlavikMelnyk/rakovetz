@@ -10,7 +10,14 @@ export default () => {
     <React.Fragment>
       <Carousel/>
       <div className='content-wrapper'>
-      <ReactPlayer url={promo} playing={true} controls volume={0} width='50%' height='auto' />
+      <ReactPlayer
+        url={promo}
+        playing={true}
+        controls
+        volume={0}
+        width={window.innerWidth < 1000 ? '100%' : '50%'}
+        height='auto'
+      />
       <ObserverWrapper>
         <GoogleMap />
       </ObserverWrapper>
