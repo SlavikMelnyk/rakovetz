@@ -1,0 +1,17 @@
+.nav {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.1);
+  transition: 0.75s;
+  
+  a { 
+    color: white !important;
+    font-weight: bold;
+  }
+}
+
+.nav.scrolled {
+  position: fixed;
+  background: black;
+}
