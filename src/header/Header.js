@@ -1,12 +1,14 @@
 import React from 'react';
 import './header.scss';
 import { Navbar, Nav } from 'react-bootstrap';
+import logo from './logo-m.png';
 
 export default (props) => {
   return(
     <div className={!props.scrolled ? 'nav' : 'nav scrolled'}>
+      <img src={logo} alt='logo' />
       <Navbar expand="lg">
-        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">Forest House Rakovetz</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
