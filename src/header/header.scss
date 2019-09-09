@@ -5,13 +5,41 @@
   background-color:rgba(256, 256, 256, 0.3);
   transition: 0.75s;
   
-  a {
-    font-size: 28px;
-    font-weight: bold;
-  }
+  .navbar {
+    a {
+      font-size: 28px;
+      position: relative;
+      top: 10px;
+    }
+  } 
 }
 
 .nav.scrolled {
   position: fixed;
   background-color:rgba(256, 256, 256, 0.9);
 }
+
+.contact-area {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  font-size: 20px;
+  height: 40px;
+  
+  .contact-item {
+    margin-left: 20px;
+  }
+  
+  img {
+    height: 40px;
+    
+    &.booking-icon {
+      height: 50px;
+    }
+  }
+}
+
