@@ -47,10 +47,8 @@ export default (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Link to='/'><Nav.Link href="/">Home</Nav.Link></Link>
-            <Link to='link'><Nav.Link href="link">Link</Nav.Link></Link>
-            <Link to='link1'><Nav.Link href="link1">Link1</Nav.Link></Link>
-            <Link to='link2'><Nav.Link href="link2">Link2</Nav.Link></Link>
+            <Link to='/'>Головна</Link>
+            <Link to='/gallery'>Галерея</Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
