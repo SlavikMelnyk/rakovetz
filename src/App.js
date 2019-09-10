@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.scss';
 import Header from './header/Header';
+import Gallery from './gallery/Gallery';
 import Homepage from './home/Homepage';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 
@@ -10,7 +11,8 @@ export default () => {
     window.addEventListener('scroll', () => {
       const isTop = window.scrollY < 100;
       setScrolled(!isTop);
-    })
+    });
+    document.title='Forest House Rakovetz';
   }, []);
 
   return (
@@ -25,7 +27,7 @@ export default () => {
       <Router>
         <Header scrolled={scrolled} />
         <Route path='/' exact component={Homepage} />
-        <Route path='/gallery' render={() => <h2>LINK</h2>} />
+        <Route path='/gallery' component={Gallery} />
       </Router>
     </div>
   );
