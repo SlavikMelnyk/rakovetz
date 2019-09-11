@@ -17,7 +17,7 @@ export default () => {
 
   return (
     <div className="App">
-      <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Gabriela&display=swap" rel="stylesheet" />
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
