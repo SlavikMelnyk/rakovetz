@@ -1,15 +1,15 @@
 import React from 'react';
 import './home.scss';
 import { Carousel } from 'react-bootstrap';
-import img1 from './carousel-imgs/jpg-01-min.jpg';
-import img2 from './carousel-imgs/jpg-02-min.jpg';
-import img3 from './carousel-imgs/jpg-03-min.jpg';
-import img4 from './carousel-imgs/jpg-04-min.jpg';
-import img5 from './carousel-imgs/jpg-05-min.jpg';
-import img6 from './carousel-imgs/jpg-06-min.jpg';
-import img7 from './carousel-imgs/jpg-07-min.jpg';
-import img8 from './carousel-imgs/jpg-08-min.jpg';
-import img9 from './carousel-imgs/jpg-09-min.jpg';
+import img1 from './carousel-imgs/jpg-01-min.webp';
+import img2 from './carousel-imgs/jpg-02-min.webp';
+import img3 from './carousel-imgs/jpg-03-min.webp';
+import img4 from './carousel-imgs/jpg-04-min.webp';
+import img5 from './carousel-imgs/jpg-05-min.webp';
+import img6 from './carousel-imgs/jpg-06-min.webp';
+import img7 from './carousel-imgs/jpg-07-min.webp';
+import img8 from './carousel-imgs/jpg-08-min.webp';
+import img9 from './carousel-imgs/jpg-09-min.webp';
 
 export default () => {
   return(
