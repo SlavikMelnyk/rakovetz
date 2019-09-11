@@ -12,7 +12,6 @@ export default () => {
       const isTop = window.scrollY < 100;
       setScrolled(!isTop);
     });
-    document.title='Forest House Rakovetz';
   }, []);
 
   return (
