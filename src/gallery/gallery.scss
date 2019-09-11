@@ -1,12 +1,19 @@
 .img-gallery-container {
   padding-top: 141px;
-  .image-gallery {
-    width: 50%;
-  }
   
-  .right-aligned {
+  .mini-gallery {
+    display: flex;
     position: relative;
-    left: 50%;
+    flex-wrap: nowrap;
+    
+    .image-gallery {
+      width: 50%;
+    }
+    
+    .gallery-info {
+      width: 50%;
+      margin: auto;
+    }
   }
 }
 
