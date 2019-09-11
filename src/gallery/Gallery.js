@@ -55,10 +55,6 @@ import lcimg5 from './imgs/location/img-5.jpg';
 import lcimg5t from './imgs/location/img-5-thumb.jpg';
 import lcimg6 from './imgs/location/img-6.jpg';
 import lcimg6t from './imgs/location/img-6-thumb.jpg';
-import lcimg7 from './imgs/location/img-7.jpg';
-import lcimg7t from './imgs/location/img-7-thumb.jpg';
-import lcimg8 from './imgs/location/img-8.jpg';
-import lcimg8t from './imgs/location/img-8-thumb.jpg';
 import lcimg9 from './imgs/location/img-9.jpg';
 import lcimg9t from './imgs/location/img-9-thumb.jpg';
 import lcimg10 from './imgs/location/img-10.jpg';
@@ -236,14 +232,6 @@ export default (props) => {
       thumbnail: lcimg6t,
     },
     {
-      original: lcimg7,
-      thumbnail: lcimg7t,
-    },
-    {
-      original: lcimg8,
-      thumbnail: lcimg8t,
-    },
-    {
       original: lcimg9,
       thumbnail: lcimg9t,
     },
@@ -378,7 +366,7 @@ export default (props) => {
   return (
     <div className='img-gallery-container'>
       <div className='mini-gallery left-aligned'>
-        <ImageGallery items={housesImgs} />
+        <ImageGallery lazyLoad items={housesImgs} />
         <div className='gallery-info'>
           <h2>Котеджі</h2>
         </div>
@@ -387,10 +375,10 @@ export default (props) => {
         <div className='gallery-info'>
           <h2>Сауна/Чан</h2>
         </div>
-        <ImageGallery items={saunaImgs} />
+        <ImageGallery lazyLoad items={saunaImgs} />
       </div>
       <div className='mini-gallery left-aligned'>
-        <ImageGallery items={lakeImgs} />
+        <ImageGallery lazyLoad items={lakeImgs} />
         <div className='gallery-info'>
           <h2>Альтанка на озері</h2>
         </div>
@@ -399,10 +387,10 @@ export default (props) => {
         <div className='gallery-info'>
           <h2>Локація</h2>
         </div>
-        <ImageGallery items={locationImgs} />
+        <ImageGallery lazyLoad items={locationImgs} />
       </div>
       <div className='mini-gallery left-aligned'>
-        <ImageGallery items={momentsImgs} />
+        <ImageGallery lazyLoad items={momentsImgs} />
         <div className='gallery-info'>
           <h2>Моменти</h2>
         </div>
@@ -411,7 +399,7 @@ export default (props) => {
         <div className='gallery-info'>
           <h2>Зима</h2>
         </div>
-        <ImageGallery items={winterImgs} />
+        <ImageGallery lazyLoad items={winterImgs} />
       </div>
     </div>
   );
