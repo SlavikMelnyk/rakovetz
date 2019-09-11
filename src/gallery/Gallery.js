@@ -366,7 +366,7 @@ export default (props) => {
   return (
     <div className='img-gallery-container'>
       <div className='mini-gallery left-aligned'>
-        <ImageGallery lazyLoad items={housesImgs} />
+        <ImageGallery showBullets showPlayButton={false} items={housesImgs} />
         <div className='gallery-info'>
           <h2>Котеджі</h2>
         </div>
@@ -375,10 +375,10 @@ export default (props) => {
         <div className='gallery-info'>
           <h2>Сауна/Чан</h2>
         </div>
-        <ImageGallery lazyLoad items={saunaImgs} />
+        <ImageGallery showBullets showPlayButton={false} items={saunaImgs} />
       </div>
       <div className='mini-gallery left-aligned'>
-        <ImageGallery lazyLoad items={lakeImgs} />
+        <ImageGallery showBullets showPlayButton={false} items={lakeImgs} />
         <div className='gallery-info'>
           <h2>Альтанка на озері</h2>
         </div>
@@ -387,10 +387,10 @@ export default (props) => {
         <div className='gallery-info'>
           <h2>Локація</h2>
         </div>
-        <ImageGallery lazyLoad items={locationImgs} />
+        <ImageGallery showBullets showPlayButton={false} items={locationImgs} />
       </div>
       <div className='mini-gallery left-aligned'>
-        <ImageGallery lazyLoad items={momentsImgs} />
+        <ImageGallery showBullets showPlayButton={false} items={momentsImgs} />
         <div className='gallery-info'>
           <h2>Моменти</h2>
         </div>
@@ -399,7 +399,7 @@ export default (props) => {
         <div className='gallery-info'>
           <h2>Зима</h2>
         </div>
-        <ImageGallery lazyLoad items={winterImgs} />
+        <ImageGallery showBullets showPlayButton={false} items={winterImgs} />
       </div>
     </div>
   );
