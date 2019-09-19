@@ -1,17 +1,56 @@
 .nav {
   position: absolute;
   z-index: 99;
+  display: block !important;
   width: 100%;
   background-color:rgba(256, 256, 256, 0.3);
   transition: 0.75s;
+  height: 151px;
+  
+  >a {
+    height: 100px;
+    position: absolute;
+    left: 0;
+  }
+  
+  @media screen and (max-width: 992px) {
+    height: 220px;
+    
+    >a {
+      position: relative;
+      top: 80px;
+    }
+  }
   
   .navbar {
+    z-index: 100;
+    top: 80px;
+    
+    @media screen and (max-width: 992px) {
+      top: -60px;
+    }
+    
+    .mr-auto {
+      margin: 0 auto;
+    }
+    
     a {
       color: black;
       margin-right: 15px;
-      font-size: 24px;
+      font-size: 20px;
       position: relative;
       top: 15px;
+    }
+    
+    button {
+      z-index: 3;
+    }
+    
+    .navbar-collapse.show, .navbar-collapse.collapsing{
+      flex-basis: 0;
+      flex-grow: 0;
+      position: relative;
+      top: -10px;
     }
   } 
 }
@@ -32,12 +71,30 @@
   font-size: 18px;
   height: 40px;
   
+  a {
+    color: black;
+  }
+  
+  @media screen and (max-width: 992px) {
+    font-size: 18px;
+    height: auto;
+    
+    .contact-item.social {
+      position: relative;
+      top: -10px;
+    }
+  }
+  
   .contact-item {
     margin-left: 20px;
   }
   
   img {
     height: 40px;
+    
+    @media screen and (max-width: 992px) {
+      height: 30px;
+    }
     
     &.booking-icon {
       height: 50px;

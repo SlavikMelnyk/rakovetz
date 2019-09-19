@@ -7,7 +7,7 @@ function Map() {
   return (
     <GoogleMap
       defaultZoom={10}
-      defaultCenter={{lat: 49.739684, lng: 24.029716}}
+      defaultCenter={window.innerWidth < 992 ? {lat: 49.65, lng: 24.029716} : {lat: 49.739684, lng: 24.029716}}
     >
       <Marker
         position={{ lat: 49.63651, lng: 24.019465 }}
@@ -49,7 +49,7 @@ export default () => {
       <WrappedMap
         googleMapURL={'https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyBGx1tqY80K6JIMtC3CGBxB71e5oGzUCDs'}
         loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `400px` }} />}
+        containerElement={<div style={{ height: `500px` }} />}
         mapElement={<div style={{ height: `100%` }} />}
       />
     </React.Fragment>

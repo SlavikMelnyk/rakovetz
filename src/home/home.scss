@@ -1,26 +1,46 @@
-.carousel-inner {
-  .carousel-item {
-    img {
-      width: 100%;
+.home-container {
+  @media screen and (max-width: 992px) {
+    position: relative;
+    top: 220px;
+  }
+
+  .carousel-inner {
+    .carousel-item {
+      img {
+        width: 100%;
+      }
     }
   }
 }
 
+
 .content-wrapper {
   video {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  img {
+    max-width: 100%;
   }
 }
 
 .main-text {
   margin: 0 0px 70px 0px;
   font-size: 29px;
+  
+  @media screen and (max-width: 992px) {
+    font-size: 18px;
+  }
 }
 
 .location-text {
   margin: 40px 5px;
   text-align: left;
   font-size: 24px;
+  
+  @media screen and (max-width: 992px) {
+    font-size: 18px;
+  }
   
   span.tab {
     margin-left: 20px;
