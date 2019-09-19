@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import '../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
