@@ -102,6 +102,10 @@ export default (props) => {
           <div className='images'>
             <a name="houses" /> {/* eslint-disable-line */}
             <h2>Котеджі:</h2>
+            <picture>     
+              <source srcset={himg1} type='image/webp' />   
+              <img srcset={himg1} alt='myimage' />
+            </picture>
             <img data-lazy={himg1} alt='himg1' />
             <img data-lazy={himg2} alt='himg2' />
             <img data-lazy={himg3} alt='himg3' />
