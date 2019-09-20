@@ -80,7 +80,7 @@ export default (props) => {
         entries.forEach(entry => {
           if(entry.isIntersecting) {
             const img = entry.target;
-            const src = img.getAttribute('data-lazy');
+            const src = window.innerHeight <= 768 ? img.getAttribute('data-lazy-min') : img.getAttribute('data-lazy');
             img.setAttribute('src', src);
             img.classList.add('fade');
             
@@ -102,10 +102,6 @@ export default (props) => {
           <div className='images'>
             <a name="houses" /> {/* eslint-disable-line */}
             <h2>Котеджі:</h2>
-            <picture>     
-              <source srcset={himg1} type='image/webp' />   
-              <img srcset={himg1} alt='myimage' />
-            </picture>
             <img data-lazy={himg1} alt='himg1' />
             <img data-lazy={himg2} alt='himg2' />
             <img data-lazy={himg3} alt='himg3' />
