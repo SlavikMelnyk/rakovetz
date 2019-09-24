@@ -41,6 +41,13 @@ export default () => {
           <ReactPlayer
             url={promo}
             playing={visible}
+            config={{
+              file: { 
+                attributes: { 
+                  poster: logo
+                } 
+              } 
+            }}
             loop
             controls
             width={window.innerWidth < 992 ? '100%' : '1024px'}
