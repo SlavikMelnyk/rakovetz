@@ -29,7 +29,7 @@ function useOnScreen(options) {
 }
 
 export default () => {
-  const [ref, visible] = useOnScreen({ rootMargin: '-100px'});
+  const [ref, visible] = useOnScreen({ rootMargin: '-10px'});
 
   return(
     <div className='home-container'>
@@ -62,7 +62,8 @@ export default () => {
         <br/><span className='tab'>-Автобуси, які їдуть в напрямку Стрия, Миколаєва, Нового Роздолу.</span>
         <br/>Населений пункт, в якому розташована відпочинкова база, славнозвісний своїм чудотворним джерелом розташованим між Новосілкою та Раковцем.</p>
         <GoogleMap />
-  
+        <br/>
+        <p>© 2020 Forest House Rakovetz</p>
       </div>
     </div>
   );
