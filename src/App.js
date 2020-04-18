@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './header/Header';
 import Gallery from './gallery/Gallery';
 import Homepage from './home/Homepage';
+import Helmet from 'react-helmet';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 export default () => {
@@ -16,6 +17,10 @@ export default () => {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Forest House Rakovetz</title>
+        <meta name="description" content="Forest House Rakovetz" />
+      </Helmet>
       <Router>
         <Header scrolled={scrolled} />
         <Route path='/' exact component={Homepage} />
